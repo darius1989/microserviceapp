@@ -14,6 +14,7 @@ public record CustomerController(CustomerService customerService) {
     public void registerCustomer (@RequestBody CustomerRegistrationRequest request)
     {
         log.info("new Customer registration {}",request);
+        customerService.registerCustomer(request);
 
     }
 }
