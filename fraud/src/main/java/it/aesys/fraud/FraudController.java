@@ -16,9 +16,19 @@ public class FraudController {
     public FraudCheckResponse isFraudster (@PathVariable("customerId") Integer customerId)
     {
         //log.info("new Customer registration {}", request);
-        boolean isFraudolent = fraudCheckService.isFraudolentCustomer(customerId);
+        Boolean isFraudolent = fraudCheckService.isFraudolentCustomer(customerId);
 
         return new FraudCheckResponse(isFraudolent);
+
+    }
+
+    @PostMapping
+    public FraudCheckHistory save (@RequestBody FraudCheckHistory fraudCheckHistory)
+    {
+        //log.info("new Customer registration {}", request);
+       return  fraudCheckService.save(fraudCheckHistory);
+
+
 
     }
 }
