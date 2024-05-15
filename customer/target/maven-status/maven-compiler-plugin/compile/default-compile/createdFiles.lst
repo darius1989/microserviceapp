@@ -1,1 +1,9 @@
+it\aesys\customer\CustomerService.class
+it\aesys\customer\CustomerConfig.class
+it\aesys\customer\FraudCheckResponse.class
+it\aesys\customer\CustomerRegistrationRequest.class
+it\aesys\customer\Customer$CustomerBuilder.class
+it\aesys\customer\Customer.class
+it\aesys\customer\CustomerController.class
+it\aesys\customer\CustomerRepository.class
 it\aesys\customer\CustomerApplication.class

@@ -61,5 +61,6 @@
 
   <modules>
     <module>customer</module>
+    <module>fraud</module>
   </modules>
 </project>
